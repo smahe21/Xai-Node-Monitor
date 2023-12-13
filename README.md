@@ -73,28 +73,28 @@ To set up a script on VPS for XAI node notifications:
 ```
 
 screen -S monitor
-curl -L -o xai_health.sh https://gist.githubusercontent.com/smahe21/e2f38f3459ebc2bbc5ed1d39d0d15883/raw/9afb23035951dcd3bbd7ba7a705bd69959506916/xai_monitor.sh
+curl -L -o xai_monitor.sh https://github.com/smahe21/Xai-Node-Monitor/blob/master/xai_monitor.sh
 
-chmod +x xai_health.sh
+chmod +x xai_monitor.sh
 
 
 ```
 
 Replace `TELEGRAM_TOKEN` and `TELEGRAM_CHAT_ID` created in telegram setup step.
+
 ```
-nano ./xai_health.sh
+nano ./xai_monitor.sh
 ```
+
 Save file
 
 Press `CTRL + X`
 Type `Y` and Enter
 
-
-
-Alternatively you can review script file on github ([Github](https://gist.github.com/smahe21/e2f38f3459ebc2bbc5ed1d39d0d15883))
+Alternatively you can review script file on github ([Github](https://github.com/smahe21/Xai-Node-Monitor))
 
 ```
-https://gist.github.com/smahe21/e2f38f3459ebc2bbc5ed1d39d0d15883
+https://github.com/smahe21/Xai-Node-Monitor
 ```
 
 ### Test Telegram
@@ -116,7 +116,6 @@ Run and deattach screen session
 ```
 
 4. Detach from this screen session, press `Ctrl` + `A` + `D`.
-
 
 ## Follow me
 
