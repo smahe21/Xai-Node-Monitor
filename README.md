@@ -75,7 +75,8 @@ To set up a script on VPS for XAI node notifications:
 ```
 
 screen -S monitor
-curl -L -o xai_monitor.sh https://github.com/smahe21/Xai-Node-Monitor/blob/master/xai_monitor.sh
+
+curl -L -o xai_monitor.sh https://raw.githubusercontent.com/smahe21/Xai-Node-Monitor/master/xai_monitor.sh
 
 chmod +x xai_monitor.sh
 
