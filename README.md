@@ -1,3 +1,5 @@
+[![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/bukotsunikki.svg?style=social&label=Follow%20%40ShineCryptic)](https://twitter.com/ShineCryptic)
+
 # How to Get Telegram Notifications?
 
 ## Setting up the Bot on Telegram
