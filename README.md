@@ -48,6 +48,18 @@ To find out the chat ID of the group for sending messages:
 3. Save the "id" from the "chat" object.
 4. If you encounter issues (e.g., getting `{"ok":true,"result":[]}`), try removing and adding the bot again to the group.
 
+
+## Disable telegram bot to be added by other users
+
+**Disable joining groups**
+By default, the bot can be added to a group conversation by anybody who can find it. To make sure this doesn’t happen, we need to disable this.
+
+Ope telegram
+Open chat with `@BotFather`.
+Enter `/setjoingroups`.
+Enter the name of the bot. `@xai_health_bot`.
+Enter Disable
+
 # Running XAI Node Sentry with Screen -L
 
 ## Updated Command to Open a New Screen Session
