@@ -12,7 +12,7 @@
 
 If this is the first time you are setting up xai node then follow these steps.
 
-> 𝘀𝗰𝗿𝗲𝗲𝗻 -L -𝗦 𝘅𝗮i
+> 𝘀𝗰𝗿𝗲𝗲𝗻 -𝗦 𝘅𝗮i
 
 Download XAI sentry node cli.
 
@@ -33,7 +33,7 @@ Download XAI sentry node cli.
 ```mermaid
 graph LR
 A[ssh/putty] -->
-B[screen -L -S xai] -- Download sentry node cli and unzip
+B[screen -S xai] -- Download sentry node cli and unzip
 
 --> D[./sentry-node-cli-linux]
 ```
@@ -52,7 +52,7 @@ Enter key --> F[ctrl + a +d]
 
 Login to vps and attach to the xai screen session.
 
-    screen -L -r xai
+    screen -r xai
 
 If you see node logs
 
@@ -77,7 +77,7 @@ If the node stops then you have to call again
 
 ### Regularly update node software.
 
-    screen -L -r xai
+    screen -r xai
 
 Close existing node by pressing
 
@@ -99,7 +99,7 @@ Download latest node software using these commands.
 
 ```mermaid
 graph LR
-A[ssh/putty] --> B[screen -L -r xai]
+A[ssh/putty] --> B[screen -r xai]
 ```
 
 ```mermaid
