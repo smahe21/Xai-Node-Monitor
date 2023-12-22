@@ -4,10 +4,10 @@
 
 ## Setting up the Bot on Telegram
 
-1. Open Telegram and search for `BotFather` with the ID `@BotFather`.
-2. Send message to `@BotFather`.
-3. Type `/help`.
-4. Type or Click `/newbot`.
+1.Open Telegram App: Open the Telegram app on your device.
+2. Start a Chat with BotFather: Start a conversation with BotFather by clicking on it and pressing the start button. `@BotFather`.
+3. Create a New Bot: Send the message `/newbot` to BotFather.
+4. Follow BotFather's Instructions: BotFather will ask you for a name for your bot and then a username. The username must end in bot (for example, mytestbot)..
 5. Follow the instructions to create your new bot. Copy token created by BotFather and save it somewhere safely.
 
 ## Creating a Group and Adding the Bot
@@ -48,18 +48,6 @@ To find out the chat ID of the group for sending messages:
 3. Save the "id" from the "chat" object.
 4. If you encounter issues (e.g., getting `{"ok":true,"result":[]}`), try removing and adding the bot again to the group.
 
-
-## Disable telegram bot to be added by other users
-
-**Disable joining groups**
-By default, the bot can be added to a group conversation by anybody who can find it. To make sure this doesn’t happen, we need to disable this.
-
-Ope telegram
-Open chat with `@BotFather`.
-Enter `/setjoingroups`.
-Enter the name of the bot. `@xai_health_bot`.
-Enter Disable
-
 # Running XAI Node Sentry with Screen -L
 
 ## Updated Command to Open a New Screen Session
@@ -87,26 +75,13 @@ To set up a script on VPS for XAI node notifications:
 ```
 
 screen -S monitor
-
 curl -L -o xai_monitor.sh https://raw.githubusercontent.com/smahe21/Xai-Node-Monitor/master/xai_monitor.sh
 
 chmod +x xai_monitor.sh
 
-
 ```
 
-Replace `TELEGRAM_TOKEN` and `TELEGRAM_CHAT_ID` created in telegram setup step.
-
-```
-nano ./xai_monitor.sh
-```
-
-Save file
-
-Press `CTRL + X`
-Type `Y` and Enter
-
-Alternatively you can review script file on github ([Github](https://github.com/smahe21/Xai-Node-Monitor))
+You can review script file on github ([Github](https://github.com/smahe21/Xai-Node-Monitor))
 
 ```
 https://github.com/smahe21/Xai-Node-Monitor
@@ -124,13 +99,24 @@ Test whether our script is able to send message to our telegram or not.
 
 If you have successfully received message on telegram then we are ready to start our monitoring script.
 
-Run and deattach screen session
+Run and deattach screen session. Enter your telegram bot token and chat id. 
 
 ```
 ./xai_monitor.sh
 ```
 
 4. Detach from this screen session, press `Ctrl` + `A` + `D`.
+
+## Disable telegram bot to be added by other users
+
+**Disable joining groups**
+By default, the bot can be added to a group conversation by anybody who can find it. To make sure this doesn’t happen, we need to disable this.
+
+Ope telegram
+Open chat with `@BotFather`.
+Enter `/setjoingroups`.
+Enter the name of the bot. `@xai_health_bot`.
+Enter Disable
 
 ## Follow me
 
